@@ -27,7 +27,6 @@
 
 $color_link: #FF3E79;
 
-
 body {
     background-color: #F8F8F8;
     font-size: 14px;
@@ -37,7 +36,7 @@ body {
 .wrapper {
     min-height: 100%;
 }
-._container {
+.container {
     
     @media (max-width: 767px) {
         max-width: 320px;
@@ -49,7 +48,7 @@ body {
     }
     @media (min-width: 1440px) {
         max-width: 1120px;
-        margin-left: auto;
+        margin: 0 auto;
     }
 }
 .header {
@@ -76,7 +75,7 @@ body {
     }
     
 }
-.header__burger {
+.burger {
     overflow: hidden;
     position: relative;
     width: 12.5%;
@@ -100,13 +99,7 @@ body {
 }
 .title {
     width: 100%;
-    display: flex;
-    font-size: 28px;
-    font-weight: bold;
-    line-height: 40px;
-    letter-spacing: -0.6px;
-    color: #1B1C21;
-
+    display: flex;   
 }
 .title__decor {
     width: 4px;
@@ -126,6 +119,11 @@ body {
     }
 }
 .title__text {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    color: #1B1C21;
 }
 .header__logo {
     width: 31.2%;
@@ -155,7 +153,7 @@ body {
         margin-right: 32px;
     } 
 }
-.tablet {
+.menu__list--tablet {
     .menu__item {
         margin-right: 16px; 
     }
@@ -172,17 +170,17 @@ body {
         margin-top: 5px;
     }
 }
-.menu__link {
-    
-    overflow: hidden;
-    position: relative;
-}
-.menu__link-fon {
+.icon {
     width: 40px;
     height: 40px;
     background-color: $color_link;
     border-radius: 50%;
 }
+.icon__link {    
+    overflow: hidden;
+    position: relative;
+}
+
 .mobile {
     
 }
@@ -207,16 +205,16 @@ body {
         display: none;
     }
 }
-.menu__link-img {    
+.icon__img {    
     position: absolute;
     top: 10px;
     left: 10px;
 }
 /*=========================================main==============================================*/  
-.main__container{
+.main {
     margin-top: 112px;
 }
-.main__title {
+.rewiews__title {
     @media (max-width: 767px) {        
         margin: 24px 0;
     }
@@ -251,7 +249,7 @@ body {
 }
 .menu-slider__item {
     height: 42px;
-    .active {
+    .menu-slider__link--active {
         background-color: #FFFFFF;
         border: 1px  #41F6D7 solid;
         border-radius: 6px;
@@ -304,21 +302,21 @@ body {
         padding: 0 22px;
         margin-right: 10px;
     }
-    .rewiews__text-mobile {
+    .rewiews__text--height {
         height: 90px;
         margin-bottom: 16px;
         overflow: hidden;        
     }
     
     @media (min-width: 768px) and (max-width: 1439px) {
-        .rewiews__text-mobile  {
+        .rewiews__text--height  {
             height: 130px;                      
         }
     }
     @media (min-width: 1440px) {
         width: 50%;
         padding: 0 34px;
-        .rewiews__text-mobile  {
+        .rewiews__text--height  {
             height: 160px;                      
         }
     }
