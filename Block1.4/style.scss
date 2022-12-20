@@ -1,0 +1,140 @@
+@import "null.scss";
+
+@font-face {
+    font-family: 'TTLakes';
+    src: url('../../Kata/fonts/TTLakes-Bold.woff') format('woff'),url('../../Kata/fonts/TTLakes-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTLakes';
+    src: url('../../Kata/fonts/TTLakes-Medium.woff') format('woff'),url('../../Kata/fonts/TTLakes-Medium.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTLakes';
+    src: url('../../Kata/fonts/TTLakes-Regular.woff') format('woff'),url('../../Kata/fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTLakes';
+    src: url('../../Kata/fonts/TTLakes-Thin.woff') format('woff'),url('../../Kata/fonts/TTLakes-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+$color_link: #FF3E79;
+
+body {
+    background-color: #F8F8F8;
+    font-size: 14px;
+    font-family: TTLakes;
+}
+.aside-container {
+    width: 320px;
+    box-shadow: 16px 0px 52px 0 #0E185033;
+}
+.aside-header {
+    padding: 23px 24px 0 24px;
+    display: flex;
+    margin-bottom: 46px;
+}
+.icon {
+    width: 40px;
+    height: 40px;
+    background-color: $color_link;
+    border-radius: 50%;
+    &:hover {
+       opacity: 0.5; 
+       transition-property: opacity;
+       transition-duration: 1s;
+    }
+}
+.icon__link, .aside-header__burger {    
+    overflow: hidden;
+    position: relative;
+}
+.aside-header__burger {
+    margin-right: 16.5px;
+}
+.aside-header__logo {
+    margin-right: auto;
+}
+.icon__img {    
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.aside-menu__link {    
+        color: #1B1C21;
+        font-family: "TTLakes";  
+        font-weight: 600;      
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;        
+}  
+.aside-menu__item {
+    padding: 0 0 32px 24px;
+}
+.aside-menu__active {    
+        color: #7E7E82;
+        position: relative;
+    &::before {
+        content:"";
+        display: inline-block;
+        width: 4px;
+        height: 32px;
+        background-color: #41F6D7;
+        border-radius: 0 20px 20px 0;
+        position: absolute;
+        top: -7px;
+        left: -24px;
+    }
+}
+.contact-icons{
+    margin-top: 268px;    
+    padding: 0 144px 16px 24px;
+}
+.contact-icons__list {
+    display: flex;
+    justify-content: space-between;
+    width: 158px;    
+}
+.email, .tel {
+    display: block;
+    padding-left: 24px;
+    color: #1B1C21;
+}
+.email {
+    font-size: 16px;
+    padding-bottom: 12px;
+    font-weight: 600;
+}
+.tel {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.leng {
+    padding-left: 24px;
+    padding-bottom: 32px;
+    display: flex;
+    li a {    
+    color: #1B1C21;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-weight: 600;
+    }
+    .leng__choose {
+        margin-right: 7px;
+    }
+    li .leng__ative {
+        color: #7E7E82;
+    }
+}
+

@@ -1,0 +1,229 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+@font-face {
+  font-family: "TTLakes";
+  src: url("../../Kata/fonts/TTLakes-Bold.woff") format("woff"), url("../../Kata/fonts/TTLakes-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TTLakes";
+  src: url("../../Kata/fonts/TTLakes-Medium.woff") format("woff"), url("../../Kata/fonts/TTLakes-Medium.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TTLakes";
+  src: url("../../Kata/fonts/TTLakes-Regular.woff") format("woff"), url("../../Kata/fonts/TTLakes-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TTLakes";
+  src: url("../../Kata/fonts/TTLakes-Thin.woff") format("woff"), url("../../Kata/fonts/TTLakes-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+body {
+  background-color: #F8F8F8;
+  font-size: 14px;
+  font-family: TTLakes;
+}
+
+.aside-container {
+  width: 320px;
+  -webkit-box-shadow: 16px 0px 52px 0 rgba(14, 24, 80, 0.2);
+          box-shadow: 16px 0px 52px 0 rgba(14, 24, 80, 0.2);
+}
+
+.aside-header {
+  padding: 23px 24px 0 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 46px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background-color: #FF3E79;
+  border-radius: 50%;
+}
+.icon:hover {
+  opacity: 0.5;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.icon__link, .aside-header__burger {
+  overflow: hidden;
+  position: relative;
+}
+
+.aside-header__burger {
+  margin-right: 16.5px;
+}
+
+.aside-header__logo {
+  margin-right: auto;
+}
+
+.icon__img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.aside-menu__link {
+  color: #1B1C21;
+  font-family: "TTLakes";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
+.aside-menu__item {
+  padding: 0 0 32px 24px;
+}
+
+.aside-menu__active {
+  color: #7E7E82;
+  position: relative;
+}
+.aside-menu__active::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 32px;
+  background-color: #41F6D7;
+  border-radius: 0 20px 20px 0;
+  position: absolute;
+  top: -7px;
+  left: -24px;
+}
+
+.contact-icons {
+  margin-top: 268px;
+  padding: 0 144px 16px 24px;
+}
+
+.contact-icons__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 158px;
+}
+
+.email, .tel {
+  display: block;
+  padding-left: 24px;
+  color: #1B1C21;
+}
+
+.email {
+  font-size: 16px;
+  padding-bottom: 12px;
+  font-weight: 600;
+}
+
+.tel {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.leng {
+  padding-left: 24px;
+  padding-bottom: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.leng li a {
+  color: #1B1C21;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  font-weight: 600;
+}
+.leng .leng__choose {
+  margin-right: 7px;
+}
+.leng li .leng__ative {
+  color: #7E7E82;
+}
+/*# sourceMappingURL=style.css.map */
